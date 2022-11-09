@@ -103,11 +103,11 @@ export default function App() {
         <TextField label="動かす時間(秒)" type="number" variant="standard" placeholder={time.toString()} onChange={handleTimeChange}/>
       </Box>
       <Box>
-        <Button variant="contained" onClick={handleClickGo}>直進</Button>
-        <Button variant="contained" onClick={handleClickBack}>後退</Button>
-        <Button variant="contained" onClick={handleClickRight}>右旋回</Button>
-        <Button variant="contained" onClick={handleClickLeft}>左旋回</Button>
-        <Button variant="contained" onClick={handleClickStop}>停止</Button>
+        <Button variant="text" onClick={handleClickGo}>直進</Button>
+        <Button variant="text" onClick={handleClickBack}>後退</Button>
+        <Button variant="text" onClick={handleClickRight}>右旋回</Button>
+        <Button variant="text" onClick={handleClickLeft}>左旋回</Button>
+        <Button variant="text" onClick={handleClickStop}>停止</Button>
       </Box>
       <Box>
         {code ? (
